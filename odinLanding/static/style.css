@@ -1,0 +1,290 @@
+* {
+    /* border: solid 1px red; */
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --heroBg:#1F2937;
+    --whiteBg:#FFFFFF;
+    --quoteBg:#E5E7Eb;
+    
+    --heroTxtMain:#F9FAF8;
+    --heroTxtSec:#E5E7EB;
+    --headerTxtLogo:#F9FAF8;
+    --infoTxtHeader:#1F2937;
+    --quoteTxt:#1F2937;
+
+    --btnColor:#3882F6;
+    --btnColorHover: #3676dd;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 4fr 2fr 1fr;
+    grid-template-columns: auto;
+}
+
+/* Navbar styles */
+
+.navbar {
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+
+    background-color: var(--heroBg);
+    color: var(--heroTxtMain);
+}
+
+.navbar-links {
+    width: 35%;
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.header-txt-logo {
+    color: var(--headerTxtLogo);
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+a {
+    color: var(--heroTxtSec);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--quoteBg);
+}
+/* end of navbar styles */
+
+
+
+/* Hero styles */
+
+.hero-container {
+    grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+    gap: 30px;
+
+    height: 220px;
+
+    background-color: var(--heroBg);
+}
+
+.hero-txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+
+    width: 35%;
+}
+
+.hero-txt-header {
+    color: var(--heroTxtMain);
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero-txt-body {
+    color: var(--heroTxtSec);
+    font-size: 18px;
+}
+
+.hero-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35%;
+    height: 100%;
+
+    background-image: url(./images/Grey.png);
+    color: var(--heroTxtMain);
+}
+
+.signup-btn {
+    width: 90px;
+    height: 30px;
+
+    background-color: var(--btnColor);
+    border-radius: 4px;
+    border: 1px solid var(--btnColor);
+    color: var(--heroTxtMain);
+    font-weight: bolder;
+}
+
+.signup-btn:hover {
+    background-color: var(--btnColorHover);
+}
+/* end of hero styles */
+
+
+
+/* Info styles */
+.info-container {
+    grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-rows: 1fr / 4fr;
+    padding: 50px 0px 50px 0px;
+}
+
+.info-header {
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.info-txt-header {
+    color: var(--infoTxtHeader);
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.info-img-container {
+    grid-row: 2 / 3;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info-img-caption-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 130px;
+    height: auto;
+    margin: 20px;
+
+    text-align: center;
+}
+
+.info-img {
+    width: 130px;
+    height: 130px;
+
+    border: solid 2px var(--btnColor);
+    border-radius: 10px;
+}
+
+.info-txt-body {
+    font-size: 18px;
+    font-weight: lighter;
+}
+/* end of info styles */
+
+
+
+/* Testamonial styles */
+.testimonial-container {
+    grid-row: 4 / 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--quoteBg);
+}
+
+.testimonial-quote-speaker-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 55%;
+}
+
+.quote-container {
+    align-self: flex-start;
+
+    color: var(--quoteTxt);
+    font-size: 36px;
+    font-style: italic;
+}
+
+.speaker-container {
+    align-self: flex-end;
+
+    color: var(--quoteTxt);
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/* end of testamonial styles */
+
+
+
+/* ad styles */
+.ad-container {
+    grid-row: 5 / 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad {
+    width: 60%;
+    height: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--btnColor);
+    border-radius: 5px;
+}
+
+.ad-txt {
+    color: var(--heroTxtSec);
+    font-size: 18px;
+}
+
+.ad-signup-btn {
+    width: 90px;
+    height: 30px;
+
+    background-color: var(--btnColor);
+    border-radius: 4px;
+    border: 1px solid var(--heroTxtMain);
+    color: var(--heroTxtMain);
+    font-weight: bolder;
+}
+
+.ad-signup-btn:hover {
+    background-color: var(--btnColorHover);
+}
+
+/* end of ad styles */
+
+
+
+/* footer styles */
+.footer {
+    grid-row: 6 / 7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--heroBg);
+    color: var(--heroTxtSec);
+}
+/* end of footer styles */
