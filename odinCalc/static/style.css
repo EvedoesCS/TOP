@@ -33,12 +33,20 @@
 .screen-equation {
     grid-row: 1 / 2;
 
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
     background-color: #ee99ee;
 
 }
 
 .screen-results {
     grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 
     background-color: #99ee99;
 }
@@ -69,7 +77,12 @@
     width: 50%;
 }
 
-.large-btn {
+.clear-btn {
+    height: 25%;
+    width: 50%;
+}
+
+.evaluate-btn {
     height: 25%;
     width: 100%;
 }

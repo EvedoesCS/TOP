@@ -16,11 +16,11 @@
             <!-- results screen -->
             <div class="calc-screen">
                 <!-- working equation -->
-                <div class="screen-equation">
+                <div class="screen-equation" id="eScreen">
 
                 </div>
                 <!-- results -->
-                <div class="screen-results">
+                <div class="screen-results" id="rScreen">
 
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="calc-keypad">
                 <button class="keypad-btn">0</button>
                 <button class="keypad-btn">.</button>
-                <button class="keypad-btn">(-)</button>
+                <button class="keypad-btn">-</button>
                 <button class="keypad-btn">1</button>
                 <button class="keypad-btn">2</button>
                 <button class="keypad-btn">3</button>
@@ -41,13 +41,13 @@
             </div class="calc-operators">
             <!-- operators keypad -->
             <div class="operator-keypad">
-                <button class="operator-btn">&div;</button>
-                <button class="operator-btn">X</button>
-                <button class="operator-btn">+</button>
-                <button class="operator-btn">-</button>
-                <button class="operator-btn">&Sqrt;</button>
-                <button class="operator-btn">x&sup2;</button>
-                <button class="large-btn">=</button>
+                <button class="operator-btn" id="divide">&div;</button>
+                <button class="operator-btn" id="multiply">X</button>
+                <button class="operator-btn" id="plus">+</button>
+                <button class="operator-btn" id="minus">-</button>
+                <button class="operator-btn" id="sqrt">&Sqrt;</button>
+                <button class="clear-btn" id="clear">clear</button>
+                <button class="evaluate-btn" id="evaluate-btn">=</button>
             </div>
         </div>
     </div>
