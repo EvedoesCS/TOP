@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
     <title>Odin Library</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- page sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-title">
+        <h1>Odin Library</h1>
+      </div>
+      <div class="sidebar-content">
+        <input class="sidebar-form" id="bookTitle" placeholder="Book Title" type="text" />
+        <input class="sidebar-form" id="bookAuthor" placeholder="Book Author" type="text" />
+        <input class="sidebar-form" id="bookLength" placeholder="Book Length" type="text" />
+        <div class="submit-toggle-container">
+          <button class="sidebar-submit-btn" id="addBtn" type="Submit">Add To Library</button>
+          <label class="switch">
+            <input id="bookStatus" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- page content -->
+    <div class="content">
+      <table id="myTable">
+        <tr class="table-column-labels">
+          <th>Title</th>
+          <th>Author</th>
+          <th>Length (pgs)</th>
+          <th>Read?</th>
+          <th></th>
+        </tr>
+        <!-- Table extends with renderBook() function in index.js -->
+      </table>
+    </div>
+    <!-- page footer -->
+    <div class="footer">
+      <p>EvedoesCS &copy 2023</p>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
