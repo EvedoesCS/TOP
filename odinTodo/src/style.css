@@ -1,0 +1,20 @@
+* {
+    border: solid 1px red;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.postit-container {
+    height: 75%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
