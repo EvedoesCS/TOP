@@ -8,35 +8,32 @@
     <title>Post It!</title>
   </head>
   <body>
-    <div> <!-- Hero Banner  -->
-      <h1>Welcome Posters!</h1>
+    <div class="hero"> <!-- Hero Banner  -->
+      <h1 class="hero-header">Welcome</h1>
     </div>
-    <div> <!-- Content -->
-      <div> <!-- Note Creation Container -->
-        <div> <!-- Section Header -->
-          <h2>New Note!</h2>
-        </div>
-        <div> <!-- User Input Field -->
-          <div> <!-- Note Title (15 Characters max) -->
-
+    <div class="content"> <!-- Content -->
+      <div class="cc-container"> <!-- Note Creation Container -->
+        <div class="note-factory">
+          <h2 class="cc-header">New Note!</h2> <!-- Section Header -->
+          <div class="note-creator-container"> <!-- User Input Field -->
+            <div class="note-header"> <!-- Note Title (15 Characters max) -->
+            <input type="text">
           </div>
-          <div> <!-- Note Body Content (200 Characters Max) -->
-
+          <div class="note-content"> <!-- Note Body Content (200 Characters Max) -->
+            <input type="text">
           </div>
-          <div> 
-            <!-- Post it Button -->
-            <button type="submit">Post it!</button>
+              <button type="submit" class="cc-submit-btn">Post it!</button> <!-- Post it Button -->
           </div>
         </div>
-        <div>
-          <!-- Copyright Notice -->
-          <h6>EvedoesCS &copy 2023</h6>
+        <div class="copyright-container"> <!-- Copyright Notice -->
+          <p class="copyright-txt">EvedoesCS &copy 2023</p>
         </div>
       </div>
-
-      <div> <!-- Note Display Container -->
-
+      <div class="cd-container"> <!-- Content Display Container -->
+  
       </div>
+    </div>
     </div>
   </body>
 </html>
+

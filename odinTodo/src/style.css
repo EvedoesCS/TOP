@@ -3,5 +3,86 @@
 }
 
 body {
+    /* Display Stuff */
+    display: flex;
+    flex-direction: column;
+
+
+    /* Box Model Stuff */
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Welcome Hero Banner */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 20%;
+}
+
+.hero-header {
+
+}
+
+/* Note Creator Section */
+
+.content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    height: 80%;
+
+}
+
+.cc-container {
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+
+}
+
+.cc-header {
     
+}
+
+.note-creator-container {
+
+}
+
+.note-header {
+
+}
+
+.note-content {
+
+}
+
+.cc-submit-btn {
+
+}
+
+.copyright-container {
+
+}
+
+.copyright-txt {
+
+}
+
+/* Note Display Section */
+
+.cd-container {
+    grid-column: 2 / 3;
+
+    height: 100%;
 }
